@@ -1,0 +1,37 @@
+name: Build&Deploy
+
+on:
+  schedule:
+    - cron: '0 16 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Init build dependencies
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo -E apt-get update -y
+        sudo -E apt-get install -y curl
+
+    - name: Run generate script
+      run: | 
+        mkdir -p ./dist
+        curl -o ./tmp-proxy-list.txt "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt"
+        sed -e 's/^/./g' -e 's/.full://g' -e '/.regexp:/d' ./tmp-proxy-list.txt  >> ./dist/proxy.list
+        sed -n 's/regexp://p' ./tmp-proxy-list.txt >> ./dist/regex-proxy.list
+        curl -o ./tmp-direct-list.txt "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt"
+        sed -e 's/^/./g' -e 's/.full://g' -e '/.regexp:/d' ./tmp-direct-list.txt  >> ./dist/direct.list
+        sed -n 's/regexp://p' ./tmp-direct-list.txt >> ./dist/regex-direct.list
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
