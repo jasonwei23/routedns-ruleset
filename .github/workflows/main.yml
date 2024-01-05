@@ -28,8 +28,10 @@ jobs:
         sed -n 's/regexp://p' ./tmp-proxy-list.txt >> ./dist/regex-proxy.list
         curl -o ./tmp-direct-list.txt "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt"
         sed -e 's/^/./g' -e 's/.full://g' -e '/.regexp:/d' ./tmp-direct-list.txt  >> ./dist/direct.list
+        cat ./custom-direct.txt >> ./dist/direct.list
         sed -n 's/regexp://p' ./tmp-direct-list.txt >> ./dist/regex-direct.list
-
+        cat ./custom-regex-direct.txt >> ./dist/regex-direct.list
+        
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
