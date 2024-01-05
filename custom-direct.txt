@@ -1,1 +1,3 @@
 .steamserver.net
+.push.apple.com
+time.apple.com
