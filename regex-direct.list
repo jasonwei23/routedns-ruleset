@@ -35,3 +35,4 @@
 ^images(-\d)?\.gog-statics\.com$
 ^is[1-5](-ssl)?\.mzstatic\.com$
 ^s[1-5]?\.mzstatic\.com$
+
