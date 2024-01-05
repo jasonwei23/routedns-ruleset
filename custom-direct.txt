@@ -1,3 +1,5 @@
 .steamserver.net
 .push.apple.com
+gsp-ssl.ls.apple.com
+gsp-ssl.ls-apple.com.akadns.net
 time.apple.com
