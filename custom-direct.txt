@@ -2,4 +2,5 @@
 .push.apple.com
 gsp-ssl.ls.apple.com
 gsp-ssl.ls-apple.com.akadns.net
+configuration.ls.apple.com
 time.apple.com
