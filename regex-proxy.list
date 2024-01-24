@@ -19,6 +19,8 @@
 (^|\.)aipa(111|222|333|444|555|666|777|888|999)\.life$
 (^|\.)aisejushi(2|3|5|6)\.com$
 (^|\.)aiwei[1-9]{2}\.buzz$
+(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
+(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
 (^|\.)aqdk[0-9]{3}\.com$
 (^|\.)avcc1[0-9]\.com$
 (^|\.)avstar0[1-9]\.(com|me)$
@@ -157,7 +159,12 @@
 .+\.na-toronto\.tencentcos\.(cn|com(\.cn)?)$
 .+\.sa-saopaulo\.tencentcos\.(cn|com(\.cn)?)$
 github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com
+^((((ut1-wwv)|(ntp\-(b|d|wwv))|(time(\-(([a-e]\-(g|b))|([a-e]\-wwv)))?)).nist.gov)|((ntp-c|ut1-time)|(utcnist(2|3)?)).colorado.edu)$
 ^epicgames-download\d\.akamaized\.net$
 ^ewcdn[0-9]{2}\.nowe\.com$
 ^hses[1-7]?.akamaized.net$
+^ntp[0-7].ntp-servers.net$
+^time(.euro)?.apple.com$
+^time([1-4])?.google.com$
+^time([1-5])?.facebook.com$
 ^[0-9]+vod-adaptive\.akamaized\.net$
