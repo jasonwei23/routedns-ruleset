@@ -1,4 +1,5 @@
 .steamserver.net
+.mangacopy.com
 .push.apple.com
 gsp-ssl.ls.apple.com
 gsp-ssl.ls-apple.com.akadns.net
