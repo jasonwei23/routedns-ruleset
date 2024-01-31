@@ -1,1 +1,2 @@
-.bing.com
+.bing.com.cn
+cn.bing.com
