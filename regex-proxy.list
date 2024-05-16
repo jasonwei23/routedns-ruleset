@@ -142,15 +142,9 @@
 .+\.ap-seoul\.tencentcos\.(cn|com(\.cn)?)$
 .+\.ap-singapore\.tencentcos\.(cn|com(\.cn)?)$
 .+\.ap-tokyo\.tencentcos\.(cn|com(\.cn)?)$
-.+\.awsdns-cn-[0-9][0-9]\.biz$
-.+\.awsdns-cn-[0-9][0-9]\.com$
-.+\.awsdns-cn-[0-9][0-9]\.net$
-.+\.awsdns-cn-[0-9][0-9]\.top$
+.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
 .+\.awsdns-cn-[0-9][a-e0-9]\.cn$
-.+\.awsdns-[0-9][0-9]\.com$
-.+\.awsdns-[0-9][0-9]\.co\.uk$
-.+\.awsdns-[0-9][0-9]\.net$
-.+\.awsdns-[0-9][0-9]\.org$
+.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
 .+\.dkr\.ecr\.[^\.]+\.amazonaws\.com$
 .+\.eu-frankfurt\.tencentcos\.(cn|com(\.cn)?)$
 .+\.eu-moscow\.tencentcos\.(cn|com(\.cn)?)$
@@ -158,6 +152,7 @@
 .+\.na-siliconvalley\.tencentcos\.(cn|com(\.cn)?)$
 .+\.na-toronto\.tencentcos\.(cn|com(\.cn)?)$
 .+\.sa-saopaulo\.tencentcos\.(cn|com(\.cn)?)$
+chatgpt-async-webps-prod-eastus-\d+\.webpubsub\.azure\.com$
 github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com
 ^((((ut1-wwv)|(ntp\-(b|d|wwv))|(time(\-(([a-e]\-(g|b))|([a-e]\-wwv)))?)).nist.gov)|((ntp-c|ut1-time)|(utcnist(2|3)?)).colorado.edu)$
 ^epicgames-download\d\.akamaized\.net$
