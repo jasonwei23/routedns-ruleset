@@ -31,7 +31,7 @@
 ^gog-cdn-.+\.footprint\.net$
 ^images(-\d)?\.gog-statics\.com$
 ^is[1-5](-ssl)?\.mzstatic\.com$
-^ntp([1-5])?.tencent.com$
-^ntp([1-7])?.aliyun.com$
+^ntp([1-5])?\.tencent\.com$
+^ntp([1-7])?\.aliyun\.com$
 ^s[1-5]?\.mzstatic\.com$
 
